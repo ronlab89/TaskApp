@@ -1,15 +1,18 @@
-# Webpack Starter
+# Task App
 
-Este es el proyecto inicial para crear aplicaciones utilizando webpack.
+This is an application to keep track of your daily tasks.
 
 ### Notas:
-Recuerden reconstruir los modulos de Node
-```
-npm install
-```
 
-Y para construir el build, recuerden:
-```
-npm run build
-```
+you can create the amount of tasks you need.
+
+mark them as done.
+
+delete them if you no longer need them.
+
+
+
+
+
+
 
