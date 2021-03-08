@@ -23,7 +23,8 @@ button {
 body {
 	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	line-height: 1.4em;
-	background: #f5f5f5;
+	background: rgb(2,0,36); 
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,166,200,0.8799894957983193) 100%);
 	color: #111111;
 	min-width: 230px;
 	max-width: 550px;
@@ -47,6 +48,7 @@ body {
 	position: relative;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
 	            0 25px 50px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
 }
 
 .todoapp input::-webkit-input-placeholder {
@@ -74,7 +76,7 @@ body {
 	font-size: 80px;
 	font-weight: 200;
 	text-align: center;
-	color: #b83f45;
+	color: black;
 	-webkit-text-rendering: optimizeLegibility;
 	-moz-text-rendering: optimizeLegibility;
 	text-rendering: optimizeLegibility;
@@ -232,13 +234,13 @@ body {
 	height: 40px;
 	margin: auto 0;
 	font-size: 30px;
-	color: #cc9a9a;
+	color: rgba(3, 0, 204, 0.2);
 	margin-bottom: 11px;
 	transition: color 0.2s ease-out;
 }
 
 .todo-list li .destroy:hover {
-	color: #af5b5e;
+	color: rgba(3, 0, 204, 0.5)
 }
 
 .todo-list li .destroy:after {
@@ -265,21 +267,6 @@ body {
 	border-top: 1px solid #e6e6e6;
 }
 
-.footer:before {
-	content: '';
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	height: 50px;
-	overflow: hidden;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2),
-	            0 8px 0 -3px #f6f6f6,
-	            0 9px 1px -3px rgba(0, 0, 0, 0.2),
-	            0 16px 0 -6px #f6f6f6,
-	            0 17px 2px -6px rgba(0, 0, 0, 0.2);
-}
-
 .todo-count {
 	float: left;
 	text-align: left;
@@ -296,6 +283,9 @@ body {
 	position: absolute;
 	right: 0;
 	left: 0;
+	float: left;
+	text-align: left;
+	margin-left: 20px;
 }
 
 .filters li {
@@ -312,11 +302,11 @@ body {
 }
 
 .filters li a:hover {
-	border-color: rgba(175, 47, 47, 0.1);
+	border-color: rgba(3, 0, 204, 0.1);
 }
 
 .filters li a.selected {
-	border-color: rgba(175, 47, 47, 0.2);
+	border-color: rgba(3, 0, 204, 0.2);
 }
 
 .clear-completed,
@@ -326,17 +316,20 @@ html .clear-completed:active {
 	line-height: 20px;
 	text-decoration: none;
 	cursor: pointer;
+	border-radius: 3px;
+	padding: 0.5px 7px;
 }
 
 .clear-completed:hover {
-	text-decoration: underline;
+	text-decoration: none;
+	border: 1px solid rgba(3, 0, 204, 0.8);
 }
 
 .info {
 	margin: 65px auto 0;
-	color: #4d4d4d;
-	font-size: 11px;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	color: black;
+	font-size: 12px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 	text-align: center;
 }
 
