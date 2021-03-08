@@ -2,7 +2,7 @@
 
 This is an application to keep track of your daily tasks.
 
-### Notas:
+### Notes:
 
 you can create the amount of tasks you need.
 
